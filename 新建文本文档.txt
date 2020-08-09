@@ -1,0 +1,12 @@
+#用到了for循环的多个元素同时迭代
+#zip函数
+#split函数，append函数
+Info=[]
+name=input('name')
+age=input('age')
+score=input('score')
+for (i,j,k) in zip(name.split(' '),age.split(' '),score.split(' ')):
+    info={'name':i,'age':j,'score':k}
+    Info.append(info)
+    pass
+print(Info)
